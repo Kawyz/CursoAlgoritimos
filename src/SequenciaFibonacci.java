@@ -1,5 +1,6 @@
 public class SequenciaFibonacci {   
     // soma os numeros 0+1+1+2+3+4+5+6
+    //Parametro com referencia
 
     int C;
 
@@ -17,6 +18,7 @@ public class SequenciaFibonacci {
         A.valor = B.valor;
         B.valor = C;
     }
+    
     public static void main(String[] args) {
         Numero T1 = new Numero(0);
         Numero T2 = new Numero(1);
