@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class ParImparProced {
 
-    static int n;
+    static int N;
 
     public static void ParOuImpar(int V){ //Método
         System.out.println("O valor de V é: " + V);
-        System.out.println("O valor de N é: " + n);
+        //System.out.println("O valor de N é: " + N);
         
         if (V % 2 == 0){
             System.out.println("O número "+ V +" é par");
@@ -19,12 +19,9 @@ public class ParImparProced {
        Scanner tec = new Scanner(System.in);
 
         System.out.println("Digite um número: ");
-        n = tec.nextInt();
+        N = tec.nextInt();
 
-        System.out.println("Digite um número: ");
-        int V = tec.nextInt();
-
-        ParOuImpar(V); //Chama o método
+        ParOuImpar(N); //Chama o método
 
         tec.close();
     }    
