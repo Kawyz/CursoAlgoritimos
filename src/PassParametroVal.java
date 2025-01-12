@@ -24,17 +24,4 @@ public class PassParametroVal {
         System.out.println("Valor de X =" + X);
         System.out.println("Valor de Y =" + Y);
     }
-
-    /*//Exemplo 01
-    public static void Soma(int A, int B){
-        System.out.printf("Recebi o valor: %d\n", A);
-        System.out.printf("Recebi o valor: %d\n", B);
-        System.out.printf("A soma entre os dois é: %d\n", A + B);  
-    }
-    
-    public static void main(String[] args) {
-        int X = 5;
-        int Y = 3;
-        Soma(X, Y);
-    }*/
 }
