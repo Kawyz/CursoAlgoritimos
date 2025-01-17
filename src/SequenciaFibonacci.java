@@ -1,9 +1,5 @@
 public class SequenciaFibonacci {   
-    // soma os numeros 0+1+1+2+3+4+5+6
-    //Parametro com referencia
-
-    int C;
-
+   
     static class Numero{
         int valor;
 
@@ -12,11 +8,13 @@ public class SequenciaFibonacci {
         }
     }
 
-    public static void ProximoFibonacci(Numero A, Numero B){
+    public static int ProximoFibonacci(Numero A, Numero B){
         int C = A.valor + B.valor;
         System.out.println(C);
         A.valor = B.valor;
         B.valor = C;
+
+        return C;
     }
     
     public static void main(String[] args) {
