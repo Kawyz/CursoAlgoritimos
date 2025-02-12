@@ -19,10 +19,10 @@ public class DissecandoMatrizes {
 
     public static void DiagonalPrincipal() {
         for (l = 0; l < 4; l++) {
-            System.out.print(String.format("%-3d", matriz[l][c]));
             for (int t = 0; t < l; t++) {
                 System.out.print("   ");
             }
+            System.out.println(String.format("%-3d", matriz[l][l]));
         }
     }
 
@@ -55,8 +55,8 @@ public class DissecandoMatrizes {
 
     public static void main(String[] args) {
 
-        for (l = 0; l < 4; l++){
-            for (c = 0; c < 4; c++){
+        for (l = 0; l < 4; l++) {
+            for (c = 0; c < 4; c++) {
                 System.out.print("Digite valor para a posição [" + (l + 1) + ", " + (c + 1) + "]: ");
                 matriz[l][c] = tec.nextInt();
             }
@@ -72,10 +72,9 @@ public class DissecandoMatrizes {
             System.out.println("[4] Triangulo Inferior");
             System.out.println("[5] Sair");
 
-            do {
-                System.out.println("============ OPÇÂO: ");
-                opcao = tec.nextInt();
-            } while (opcao >= 1 && opcao <= 5);
+            System.out.println("============== OPÇÂO: ");
+            opcao = tec.nextInt();
+            System.out.println("======================");
 
             switch (opcao) {
                 case 1:
@@ -90,15 +89,12 @@ public class DissecandoMatrizes {
                 case 4:
                     TrianguloInferior();
                     break;
-                case 5: 
+                case 5:
                     System.out.println("ENCERRANDO...");
                     break;
-                default: 
-                System.out.println("Opção Inválida");
+                default:
+                    System.out.println("Opção Inválida");
             }
-
-            System.out.println();
-
         } while (opcao != 5);
     }
 }
